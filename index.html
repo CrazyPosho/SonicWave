@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="./src/output.css" />
   </head>
   <body class="bg-gray-50">
-    <header class="">
+    <header>
       <nav class="my-10">
         <ul
-          class="mx-auto bg-zorba-200 py-6 rounded-xl w-[30%] flex gap-x-5 justify-center text-zorba-600 font-semibold"
+          class="mx-auto bg-zorba-200 py-6 flex gap-x-3 justify-center text-zorba-600 font-semibold sm:w-[50%] lg:w-[30%] sm:rounded-xl md:gap-x-5"
         >
           <li class="hover:scale-110 hover:text-zorba-900 transition">
             <a href="#inicio">Inicio</a>
@@ -21,15 +21,12 @@
           <li class="hover:scale-110 hover:text-zorba-900 transition">
             <a href="#testimonios">Testimonios</a>
           </li>
-          <li class="hover:scale-110 hover:text-zorba-900 transition">
-            <a href="#contacto">Contacto</a>
-          </li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="flex flex-col items-center w-[50%] mx-auto">
+      <section class="flex flex-col items-center w-[50%] mx-auto text-center">
         <h1
           class="text-6xl font-bold bg-gradient-to-r from-zorba-400 to-zorba-900 bg-clip-text text-transparent"
         >
@@ -39,10 +36,10 @@
         <div>
           <img src="./img/headphone 1.png" alt="Auriculares SonicWave" />
         </div>
-        <h2 class="text-4xl font-semibold pb-5">
+        <h2 class="font-semibold pb-5 text-2xl sm:text-4xl">
           Experimenta el Sonido del Futuro
         </h2>
-        <p class="font-semibold text-xl">
+        <p class="font-medium text-xl w-96">
           Auriculares inalámbricos con calidad de sonido incomparable y
           comodidad todo el día.
         </p>
@@ -55,19 +52,19 @@
 
       <section id="caracteristicas" class="text-center mt-52 w-[50%] mx-auto">
         <h2
-          class="text-5xl font-bold bg-gradient-to-r from-zorba-400 to-zorba-900 bg-clip-text text-transparent"
+          class="text-3xl sm:text-5xl font-bold bg-gradient-to-r from-zorba-400 to-zorba-900 bg-clip-text text-transparent"
         >
           Características Destacadas
         </h2>
-        <ul class="flex justify-evenly gap-5 font-semibold mt-16">
-          <li>
+        <ul
+          class="flex flex-col sm:flex-row justify-center gap-5 font-semibold sm:mt-14"
+        >
+          <li class="flex items-center gap-x-1 sm:gap-0 sm:block">
             <svg
-              width="200"
-              height="200"
               viewBox="0 0 157 157"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              class="mx-auto"
+              class="icons"
             >
               <g clip-path="url(#clip0_1_96)">
                 <path
@@ -81,15 +78,15 @@
                 </clipPath>
               </defs>
             </svg>
-            <p class="text-2xl">30 horas de duración de batería</p>
+            <p class="text-xl">30 horas de duración de batería</p>
           </li>
-          <li>
+          <li
+            class="flex flex-row-reverse gap-x-1 sm:gap-0 items-center sm:block"
+          >
             <svg
-              width="200"
-              height="200"
               viewBox="0 0 157 157"
               fill="none"
-              class="mx-auto"
+              class="icons"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -111,15 +108,13 @@
                 stroke-linejoin="round"
               />
             </svg>
-            <p class="text-2xl">Cancelación de ruido activa</p>
+            <p class="text-xl">Cancelación de ruido activa</p>
           </li>
-          <li>
+          <li class="flex items-center gap-x-1 sm:gap-0 sm:block">
             <svg
-              width="200"
-              height="200"
               viewBox="0 0 141 157"
               fill="none"
-              class="mx-auto"
+              class="icons"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -129,36 +124,44 @@
                 fill="black"
               />
             </svg>
-            <p class="text-2xl">Conectividad Bluetooth 5.0</p>
+            <p class="text-xl">Conectividad Bluetooth 5.0</p>
           </li>
         </ul>
       </section>
 
       <section id="testimonios" class="mt-52 w-[50%] mx-auto">
         <h2
-          class="text-4xl font-bold bg-gradient-to-r from-zorba-400 to-zorba-900 bg-clip-text text-transparent text-center"
+          class="text-3xl sm:text-5xl font-bold bg-gradient-to-r from-zorba-400 to-zorba-900 bg-clip-text text-transparent text-center"
         >
-          Lo que dicen nuestros clientes
+          Nuestros Clientes
         </h2>
         <div
-          class="grid grid-cols-4 grid-rows-4 w-[80%] mx-auto gap-5 text-center mt-16"
+          class="flex flex-col lg:grid grid-cols-4 grid-rows-4 w-[80%] mx-auto gap-5 text-center mt-16"
         >
-          <blockquote class="cards col-start-1 col-end-4 row-start-1 row-end-3">
+          <blockquote
+            class="cards col-start-1 col-end-3 xl:col-start-1 xl:col-end-4 row-start-1 row-end-3"
+          >
             "Los mejores auriculares que he tenido. El sonido es increíble y la
             batería dura muchísimo."
             <span class="font-bold text-black">María G.</span>
           </blockquote>
-          <blockquote class="cards col-start-4 col-end-5 row-start-1 row-end-3">
+          <blockquote
+            class="cards col-start-3 col-end-5 xl:col-start-4 xl:col-end-5 row-start-1 row-end-3"
+          >
             "La cancelación de ruido es impresionante. Perfectos para trabajar o
             viajar." <span class="font-bold text-black">Carlos R.</span>
           </blockquote>
-          <blockquote class="cards col-start-1 col-end-2 row-start-3 row-end-5">
+          <blockquote
+            class="cards col-start-1 col-end-3 xl:col-start-1 xl:col-end-2 row-start-3 row-end-5"
+          >
             "La calidad de construcción es excelente y se nota en cada detalle.
             Muy recomendables."<span class="font-bold text-black">
               Laura M.</span
             >
           </blockquote>
-          <blockquote class="cards col-start-2 col-end-5 row-start-3 row-end-5">
+          <blockquote
+            class="cards col-start-3 col-end-5 xl:col-start-2 xl:col-end-5 row-start-3 row-end-5"
+          >
             "Un sonido envolvente que realmente mejora la experiencia de
             escuchar música. Muy satisfecho con la compra."<span
               class="font-bold text-black"
@@ -167,46 +170,6 @@
             >
           </blockquote>
         </div>
-      </section>
-
-      <section id="contacto" class="mt-52 w-[50%] mx-auto">
-        <h2
-          class="text-4xl font-bold bg-gradient-to-r from-zorba-400 to-zorba-900 bg-clip-text text-transparent text-center"
-        >
-          Mantente Actualizado
-        </h2>
-        <form class="flex flex-col gap-5 w-[50%] mx-auto text-center mt-16">
-          <div class="flex flex-col">
-            <label for="nombre" class="text-2xl font-semibold">Nombre</label>
-            <input
-              placeholder="David Hernandez"
-              type="text"
-              id="nombre"
-              name="nombre"
-              class="py-2 border rounded-md bg-zorba-50 text-center"
-              required
-            />
-          </div>
-
-          <div class="flex flex-col">
-            <label for="email" class="text-2xl font-semibold">Email</label>
-            <input
-              placeholder="David@gmail.com"
-              type="email"
-              id="email"
-              name="email"
-              class="py-2 border rounded-md bg-zorba-50 text-center"
-              required
-            />
-          </div>
-
-          <button
-            type="submit"
-            class="bg-zorba-500 text-white rounded-lg p-3 text-2xl hover:bg-zorba-900 transition-colors"
-          >
-            Enviar
-          </button>
-        </form>
       </section>
     </main>
 

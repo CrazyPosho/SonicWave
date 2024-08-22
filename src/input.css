@@ -6,4 +6,7 @@
   .cards {
     @apply bg-zorba-200 rounded-xl p-5 text-zorba-900 flex-col content-center hover:scale-95 hover:shadow-inner transition-transform;
   }
+  .icons {
+    @apply mx-auto w-52 h-52;
+  }
 }
